@@ -1,12 +1,13 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 const Card = ({ friend }) => {
 
-    const { name, picture, email, days_since_contact, status, tags, bio, goal, next_due_date } = friend;
+    const { id, name, picture, email, days_since_contact, status, tags, bio, goal, next_due_date } = friend;
     return (
 
-        <div className="w-[259.5px] h-[254px] bg-[#ffffff] py-6 rounded-lg shadow-sm mx-auto">
+        <Link href={`/${id}`} className="cursor-pointer w-[259.5px] h-[254px] bg-[#ffffff] py-6 rounded-lg shadow-sm mx-auto">
             {/* card image */}
             <div className='rounded-full'>
                 <Image src={picture}
@@ -38,7 +39,7 @@ const Card = ({ friend }) => {
                 </div>
             </div>
 
-        </div>
+        </Link>
     );
 };
 
