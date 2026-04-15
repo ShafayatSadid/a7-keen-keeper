@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import Friends from "@/components/Friends/Friends";
 import Hero from "@/components/Hero/Hero";
 import Image from "next/image";
@@ -9,6 +10,10 @@ export default function Home() {
         <Hero/>
         <Friends/>
       </main>
+
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   );
 }

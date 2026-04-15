@@ -1,4 +1,4 @@
-import React from 'react';
+
 import TrackerCard from './TrackerCard';
 import FriendsCard from './FriendsCard';
 import friendsData from '@/data/friendsData.json';
