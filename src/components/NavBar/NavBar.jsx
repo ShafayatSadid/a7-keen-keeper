@@ -47,7 +47,7 @@ const NavBar = () => {
                 <a className="font-extrabold text-3xl">Keen<span className="text-[#244D3F]">Keeper</span></a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-1 flex items-center gap-1">
                     {
                         navLinks.map((item, ind) => <MyLinks key={ind} href={item.path} icon={item.icon}>
                             {item.icon} {item.text}

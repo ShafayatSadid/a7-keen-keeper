@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Maya Chen",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg?size=128",
+    "email": "maya.chen@gmail.com",
+    "days_since_contact": 17,
+    "status": "overdue",
+    "tags": ["college", "roommate"],
+    "bio": "Freshman year roommate at UW. Taught me how to make dumplings.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 2,
+    "name": "David Okafor",
+    "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=128&h=128&fit=crop",
+    "email": "david.okafor@protonmail.com",
+    "days_since_contact": 9,
+    "status": "on-track",
+    "tags": ["mentor", "tech"],
+    "bio": "Former team lead at Stripe. Gave me my first break in product.",
+    "goal": 30,
+    "next_due_date": "2025-07-28"
+  },
+  {
+    "id": 3,
+    "name": "Rachel Kim",
+    "picture": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=128&h=128&fit=crop",
+    "email": "rachel.kim@gmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["travel buddy", "long distance"],
+    "bio": "Friends since 9th grade biology. We travel together every two years.",
+    "goal": 14,
+    "next_due_date": "2025-07-22"
+  },
+  {
+    "id": 4,
+    "name": "Marcus Webb",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=128&h=128&fit=crop",
+    "email": "m.webb@hey.com",
+    "days_since_contact": 22,
+    "status": "overdue",
+    "tags": ["neighbor"],
+    "bio": "Met at the climbing gym. Saturday morning climbs and breakfast burritos.",
+    "goal": 7,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 5,
+    "name": "Sofia Ramirez",
+    "picture": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=128&h=128&fit=crop",
+    "email": "sofia.ramirez@hey.com",
+    "days_since_contact": 4,
+    "status": "on-track",
+    "tags": ["book club", "new friend"],
+    "bio": "Bonded over strong opinions about Sally Rooney novels at the bookstore.",
+    "goal": 21,
+    "next_due_date": "2025-08-10"
+  },
+  {
+    "id": 6,
+    "name": "James Whitaker",
+    "picture": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=128&h=128&fit=crop",
+    "email": "j.whitaker@protonmail.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["college","ghosted"],
+    "bio": "Bass player from my college band. Terrible texter, great guy.",
+    "goal": 30,
+    "next_due_date": "2025-07-15"
+  },
+  {
+    "id": 7,
+    "name": "Priya Singh",
+    "picture": "https://images.unsplash.com/photo-1601412436009-d964bd02edbc?w=128&h=128&fit=crop",
+    "email": "priya.singh@outlook.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": ["writing"],
+    "bio": "Kept each other sane during our Master's thesis year.",
+    "goal": 14,
+    "next_due_date": "2025-07-25"
+  },
+  {
+    "id": 8,
+    "name": "Luis Herrera",
+    "picture": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=128&h=128&fit=crop",
+    "email": "luis.herrera@gmail.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["close friend"],
+    "bio": "Cousin but more like a brother. Grew up five blocks apart.",
+    "goal": 14,
+    "next_due_date": "2025-08-01"
+  }
+]
