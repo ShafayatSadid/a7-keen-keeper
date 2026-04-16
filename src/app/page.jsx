@@ -11,9 +11,7 @@ export default function Home() {
         <Friends/>
       </main>
 
-      <footer>
-        <Footer/>
-      </footer>
+      
     </div>
   );
 }

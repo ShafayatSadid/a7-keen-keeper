@@ -1,12 +1,14 @@
+import QuickCheck from '@/components/QuickCheck/QuickCheck';
+import { useTimeline } from '@/context/TimelineContext';
 import friends from '@/data/friendsData.json';
 import Image from 'next/image';
 import { FiArchive } from 'react-icons/fi';
-import { IoVideocamOutline } from 'react-icons/io5';
-import { LuPhoneCall } from 'react-icons/lu';
-import { MdOutlineTextsms } from 'react-icons/md';
 import { RiDeleteBin6Line, RiNotificationSnoozeLine } from 'react-icons/ri';
 
+
 const FriendDetailsPage = async ({ params }) => {
+
+    
 
     const { FriendId } = await params
 
@@ -109,38 +111,8 @@ const FriendDetailsPage = async ({ params }) => {
                 </div>
 
                 {/* Quick check */}
-                <div className='max-w-[736px] bg-[#ffffff] shadow-sm mt-6 rounded-lg p-6'>
+                <QuickCheck name={name}/>
 
-                    <h2 className='text-[1.25rem] font-medium text-[#244D3F] text-center md:text-left'>Quick Check-In</h2>
-
-                    {/* call text */}
-                    <div className='mt-4 flex flex-wrap items-center justify-center gap-4'>
-                        {/* call */}
-                        <div className='w-[218px] h-[95px] btn flex flex-col gap-2 text-[1.125rem] '>
-                            <span>
-                                <LuPhoneCall />
-                            </span>
-                            <p>Call</p>
-                        </div>
-
-                        {/* text */}
-                        <div className='w-[218px] h-[95px] btn flex flex-col gap-2 text-[1.125rem] '>
-                            <span>
-                                <MdOutlineTextsms />
-                            </span>
-                            <p>Text</p>
-                        </div>
-
-
-                        {/* video */}
-                        <div className='w-[218px] h-[95px] btn flex flex-col gap-2 text-[1.125rem] '>
-                            <span>
-                                <IoVideocamOutline />
-                            </span>
-                            <p>Video</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     );
