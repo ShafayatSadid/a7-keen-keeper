@@ -8,7 +8,12 @@ import { MdOutlineTextsms } from 'react-icons/md';
 const QuickCheck = ({name}) => {
 
     // use context for checking
-    const {HandleCall, HandleText, HandleVideo, setCall} = useTimeline();
+    const {HandleCall, HandleText, HandleVideo} = useTimeline();
+
+    // new date
+    const now = new Date();
+    const currentDate = now.toLocaleDateString();
+    const currentDay = now.toLocaleDateString("en-US", { weekday: "long" });
 
     return (
         <div className='max-w-[736px] bg-[#ffffff] shadow-sm mt-6 rounded-lg p-6'>
@@ -18,7 +23,7 @@ const QuickCheck = ({name}) => {
                     {/* call text video */}
                     <div className='mt-4 flex flex-wrap items-center justify-center gap-4'>
                         {/* call */}
-                        <div onClick={()=> HandleCall(name)} className='w-[218px] h-[95px] btn flex flex-col gap-2 text-[1.125rem] '>
+                        <div onClick={()=> HandleCall({name, currentDate, currentDay})} className='w-[218px] h-[95px] btn flex flex-col gap-2 text-[1.125rem] '>
                             <span>
                                 <LuPhoneCall />
                             </span>
@@ -26,7 +31,7 @@ const QuickCheck = ({name}) => {
                         </div>
 
                         {/* text */}
-                        <div onClick={()=> HandleText(name)} className='w-[218px] h-[95px] btn flex flex-col gap-2 text-[1.125rem] '>
+                        <div onClick={()=> HandleText({name, currentDate, currentDay})} className='w-[218px] h-[95px] btn flex flex-col gap-2 text-[1.125rem] '>
                             <span>
                                 <MdOutlineTextsms />
                             </span>
@@ -35,7 +40,7 @@ const QuickCheck = ({name}) => {
 
 
                         {/* video */}
-                        <div onClick={()=> HandleVideo(name)} className='w-[218px] h-[95px] btn flex flex-col gap-2 text-[1.125rem] '>
+                        <div onClick={()=> HandleVideo({name, currentDate, currentDay})} className='w-[218px] h-[95px] btn flex flex-col gap-2 text-[1.125rem] '>
                             <span>
                                 <IoVideocamOutline />
                             </span>

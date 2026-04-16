@@ -2,6 +2,7 @@ import QuickCheck from '@/components/QuickCheck/QuickCheck';
 import { useTimeline } from '@/context/TimelineContext';
 import friends from '@/data/friendsData.json';
 import Image from 'next/image';
+import { notFound } from 'next/navigation';
 import { FiArchive } from 'react-icons/fi';
 import { RiDeleteBin6Line, RiNotificationSnoozeLine } from 'react-icons/ri';
 
@@ -13,6 +14,11 @@ const FriendDetailsPage = async ({ params }) => {
     const { FriendId } = await params
 
     const targetFriend = friends.find(friend => friend.id == FriendId);
+    
+    if(!targetFriend){
+        notFound();
+    }
+
     const { id, name, picture, email, days_since_contact, status, tags, bio, goal, next_due_date } = targetFriend;
 
     return (

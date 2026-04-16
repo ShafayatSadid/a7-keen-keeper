@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
       className={`${geistSans.className} h-full antialiased`}
     >
 
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-[#F8FAFC]">
         <header>
           <NavBar></NavBar>
         </header>
@@ -35,7 +35,8 @@ export default function RootLayout({ children }) {
           <Footer />
         </footer>
 
-        <ToastContainer />
+        <ToastContainer
+        position="top-center" />
       </body>
     </html>
   );

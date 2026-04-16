@@ -16,21 +16,21 @@ export const UserTimelineProvider = ({ children }) => {
     const [call, setCall] = useState([])
     const HandleCall = (newCall) => {
         setCall([...call, newCall]);
-        toast.success(`Call with ${newCall}`)
+        toast.success(`Call with ${newCall.name}`)
     }
 
     // handle text
     const [text, setText] = useState([])
     const HandleText = (newText) => {
-        setCall([...text, newText]);
-        toast.success(`Text with ${newText}`)
+        setText([...text, newText]);
+        toast.success(`Text with ${newText.name}`)
     }
 
     // handle video
     const [video, setVideo] = useState([])
     const HandleVideo = (newVideo) => {
-        setCall([...video, newVideo]);
-        toast.success(`Video call with ${newVideo}`)
+        setVideo([...video, newVideo]);
+        toast.success(`Video call with ${newVideo.name}`)
     }
 
     const values = {
