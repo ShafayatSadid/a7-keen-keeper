@@ -57,7 +57,7 @@ const FriendDetailsPage = async ({ params }) => {
 
                         <p className='text-[1rem] text-center my-3 text-[#64748B] italic max-w-[254px] mx-auto font-medium'>"{bio}"</p>
 
-                        <p className='text-[#64748B] text-[0.875rem] text-center '>Preferred: email</p>
+                        <p className='text-[#64748B] text-[0.875rem] text-center '>Email: {email}</p>
                     </div>
                 </div>
 
