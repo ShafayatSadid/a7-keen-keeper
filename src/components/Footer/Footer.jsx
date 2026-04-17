@@ -16,9 +16,9 @@ const Footer = () => {
                 <h2 className="text-[1.25rem] font-medium ">Social Links</h2>
 
                 <div className="flex justify-center items-center gap-3 mt-4">
-                    <Image src={instagram} width={40} height={40} alt="Instagram Icon"/>
-                    <Image src={facebook} width={40} height={40} alt="Instagram Icon"/>
-                    <Image src={twitter} width={40} height={40} alt="Instagram Icon"/>
+                    <Image src={instagram} width={40} height={40} alt="Instagram Icon" />
+                    <Image src={facebook} width={40} height={40} alt="Instagram Icon" />
+                    <Image src={twitter} width={40} height={40} alt="Instagram Icon" />
                 </div>
             </div>
 
@@ -26,7 +26,11 @@ const Footer = () => {
 
             <div className="text-[1rem] text-[#FAFAFA]/50 mt-7.5 md:flex justify-between max-w-[1110px] mx-auto pb-7.5 px-1">
                 <p>© 2026 KeenKeeper. All rights reserved.</p>
-                <span>Privacy Policy           Terms of Service           Cookies</span>
+                <div className="flex items-center gap-6 justify-center">
+                    <span>Privacy Policy</span>
+                    <span>Terms of Service</span>
+                    <span>Cookies</span>
+                </div>
             </div>
         </div>
     );
